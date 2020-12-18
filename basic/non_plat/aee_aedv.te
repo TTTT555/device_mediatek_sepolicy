@@ -522,3 +522,5 @@ allow aee_aedv time_prop:file { getattr map open };
 allow aee_aedv traced_enabled_prop:file { getattr map open };
 allow aee_aedv traced_lazy_prop:file { getattr map open };
 allow aee_aedv vendor_usb_prop:file { getattr map open };
+allow aee_aedv sysfs_bus:dir search;
+allow aee_aedv boot_para_block_device:blk_file { read write };
